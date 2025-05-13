@@ -1,5 +1,5 @@
 
-## Project Overview
+## Overview
 
 **AI Summarizer & Q\&A Assistant** is a two‐part web application that lets users:
 
@@ -71,17 +71,17 @@ The backend is built with **FastAPI**, **LangChain**, **MistralAI**, and **Pinec
 ai_summarizer/
 ├── backend/
 │   ├── app/
-│   │   ├── config.py        # env var loader
-│   │   ├── embed.py         # MistralAI embeddings wrapper
-│   │   ├── main.py          # FastAPI endpoints
-│   │   ├── scraper.py       # HTML fetch & cleaning
-│   │   ├── summarizer.py    # LangChain summarization chains
-│   │   └── vectorstore.py   # Pinecone init & connection
-│   ├── .env                 # API keys & config
-│   └── requirements.txt
+│     ├── config.py        # env var loader
+│     ├── embed.py         # MistralAI embeddings wrapper
+│     ├── main.py          # FastAPI endpoints
+│     ├── scraper.py       # HTML fetch & cleaning
+│     ├── summarizer.py    # LangChain summarization chains
+│     └── vectorstore.py   # Pinecone init & connection
+│   
 └── frontend/
-    ├── app.py               # Streamlit UI
-    └── requirements.txt
+│    └── app.py               # Streamlit UI
+│    
+└── requirements.txt
 ```
 
 ### Environment Variables
@@ -93,7 +93,8 @@ PINECONE_API_KEY=your_pinecone_key
 PINECONE_ENVIRONMENT=your_pinecone_env
 PINECONE_INDEX_NAME=your_index_name
 
-MISTRALAI_API_KEY=your_mistralai_key
+MISTRAL_API_KEY=your_mistralai_key
+API_BASE=your_api
 ```
 
 ### Installation & Run
@@ -101,22 +102,22 @@ MISTRALAI_API_KEY=your_mistralai_key
 1. **Backend**
 
    ```bash
-   cd ai_summarizer/backend
+   cd ai_summarizer
    python -m venv .venv
    source .venv/bin/activate      # macOS/Linux
    .venv\Scripts\activate         # Windows
    pip install -r requirements.txt
-   uvicorn app.main:app --reload --app-dir .
+   uvicorn backend.app.main:app --reload --app-dir .
    ```
 
 2. **Frontend**
 
    ```bash
-   cd ai_summarizer/frontend
+   cd ai_summarizer
    python -m venv .venv
    source .venv/bin/activate
    pip install -r requirements.txt
-   streamlit run app.py
+   streamlit run frontend/app.py
    ```
 
 ---
