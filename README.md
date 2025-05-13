@@ -10,7 +10,7 @@ The backend is built with **FastAPI**, **LangChain**, **MistralAI**, and **Pinec
 
 ---
 
-## Demo
+## Live-Demo
 
 > Because Render’s free tier sleeps inactive services, please start the backend first:
 > **Backend (starts slowly on cold start):**
