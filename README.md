@@ -1,6 +1,3 @@
-Certainly! Here's a comprehensive `README.md` file for your **AI Summarizer & Q\&A Assistant** project. This README adheres to best practices, providing clear guidance on the project's purpose, setup, usage, and contribution guidelines.
-
----
 
 # 🌐 AI Summarizer & Q\&A Assistant
 
@@ -16,8 +13,7 @@ An interactive web application that allows users to input a URL, receive a conci
 * [Usage](#usage)
 * [API Endpoints](#api-endpoints)
 * [Technologies Used](#technologies-used)
-* [Contributing](#contributing)
-* [License](#license)
+
 
 ---
 
@@ -163,9 +159,6 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ---
 
