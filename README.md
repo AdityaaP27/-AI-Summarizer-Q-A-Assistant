@@ -3,7 +3,7 @@
 
 **AI Summarizer & Q\&A Assistant** is a two‐part web application that lets users:
 
-* **Summarize** any webpage by URL into a concise 5-sentence summary plus key bullet points
+* **Summarize** any webpage by URL into a concise 5-10 sentence summary plus key bullet points
 * **Index** that content in Pinecone and **ask questions** interactively via a Retrieval-Augmented-Generation (RAG) pipeline using MistralAI embeddings
 
 The backend is built with **FastAPI**, **LangChain**, **MistralAI**, and **Pinecone**, while the frontend uses **Streamlit**.
@@ -26,8 +26,8 @@ The backend is built with **FastAPI**, **LangChain**, **MistralAI**, and **Pinec
 
 * **URL Summarization**
 
-  * Fetches page HTML, cleans boilerplate, and summarizes in 5 sentences
-  * Extracts 5–7 key bullet points
+  * Fetches page HTML, cleans boilerplate, and summarizes in 5-10 sentences
+  * Extracts 5–10 key bullet points
 * **Interactive Q\&A**
 
   * Chunks page text and indexes in Pinecone with MistralAI embeddings
