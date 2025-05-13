@@ -1,7 +1,9 @@
 import streamlit as st
 import requests
+from dotenv import load_dotenv
 
-API_BASE = "http://127.0.0.1:8000"
+load_dotenv()
+API_BASE = os.getenv("API_BASE")
 
 # --- Page Config & Global CSS ---
 st.set_page_config(page_title="AI Summarizer & Q&A", layout="wide")
